@@ -1,0 +1,6 @@
+.bg-main-color {
+    background-color: var(--color-main);
+  }
+  .bg-secondary-color {
+    background-color: var(--color-secondary);
+  }
