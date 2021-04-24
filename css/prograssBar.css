@@ -1,0 +1,40 @@
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .progress-bar > .top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .progress-bar > .bottom {
+    display: inline-block;
+    width: 100%;
+    height: 8px;
+    background-color: #ddd;
+  }
+  .progress-bar > .bottom > .progress {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+  }
+  .progress-bar .progress > .bar {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-main);
+  }
+  .progress-bar.animate .progress > .bar {
+    animation: loading 2s cubic-bezier(0, 1.74, 0.82, -0.34) forwards;
+  }
+  
+  @keyframes loading {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }

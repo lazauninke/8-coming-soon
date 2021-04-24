@@ -1,0 +1,21 @@
+.clock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .clock > .time {
+  }
+  .clock > .time > .value {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .clock > .time > .label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  @media (min-width: 800px) {
+    .clock {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
